@@ -1,1 +1,1 @@
-# C-Language basic programming course
+# Programming activities
