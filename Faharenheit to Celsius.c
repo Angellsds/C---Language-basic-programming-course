@@ -13,7 +13,7 @@ int main()
     f = low;
     while (f <= top){
         c = 5 * (f - 32) / 9;
-        printf("%d F\t=\t%d C\n", f, c);
+        printf("%3d F\t=%7d C\n", f, c);
         f = f + step;
     }
 
