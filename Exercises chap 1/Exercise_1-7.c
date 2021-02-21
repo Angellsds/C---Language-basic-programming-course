@@ -1,11 +1,6 @@
-#include<stdio.h>
+#include <stdio.h>
 
-/* count characters in input; 1st version */
-int main(){
-        int nc;
+int main() {
 
-        nc = 0;
-        while (getchar() != EOF)
-            ++nc;
-        printf("%1d\n", nc);
+    printf("The value of EOF = %d\n", EOF);
 }
