@@ -12,11 +12,11 @@ int main(){
             while((c = getchar()) == stro[i]){
                 i++;
             }
-            if(c == scrip[1]){ //c
+            if(c == scrip[1]){
                 c = getchar();
-                if(c == scrip[2]){  //r
+                if(c == scrip[2]){
                     c = getchar();
-                    if (c == scrip[3]){ //i
+                    if (c == scrip[3]){
                         while ((c = getchar()) != '>'){
                             ;
                         }
