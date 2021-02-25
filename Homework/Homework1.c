@@ -37,7 +37,6 @@ int main(){
         else if (i == 6 && i < 13){
                 if(c == ' '){
                     printf("_");
-                    c = getchar();
                 }
             putchar(c);
            }
