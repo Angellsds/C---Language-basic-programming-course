@@ -3,8 +3,9 @@
 
 int main(){
     int c, i = 0;
-	char stro[13]={"strong/strong"};
+    char stro[13]={"strong/strong"};
     char scrip[13]={"script/script"};
+	
         while((c = getchar()) != EOF)
     {
         if(c == '<')
