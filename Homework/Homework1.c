@@ -4,7 +4,7 @@
 int main(){
     int c, i = 0;
     char stro[13]={"strong/strong"};
-    char scrip[13]={"script/script"};
+    char scrip[3]={"scrip"};
 	
         while((c = getchar()) != EOF)
     {
