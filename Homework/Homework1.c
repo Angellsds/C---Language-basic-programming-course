@@ -21,6 +21,9 @@ int main(){
                         while ((c = getchar()) != '>'){
                             ;
                         }
+		    	while((c = getchar()) != '/'){
+                            ;
+                        }
                         while((c = getchar()) != '>'){
                             ;
                         }
