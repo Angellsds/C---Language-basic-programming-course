@@ -2,8 +2,6 @@
 #include <stdio.h>
 #define k 30    //cantidad de numeros primos a buscar    ~SOLO CAMBIAR ESTE VALOR PARA TAREA~
 #define MAX 128 // para 8 bits
-int prime(/**/);
-int contador (/**/);
 
 int main (){   //consigue los primeros k numeros primos
 
