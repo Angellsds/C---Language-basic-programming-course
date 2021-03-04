@@ -8,7 +8,7 @@ int main (){   //consigue los primeros k numeros primos
 	int x, i,cont = 0;
 	int state = 0;
     unsigned int binario = MAX;
-    printf("Los primeros %d numeros primos son:\n\n", k);
+    printf(k <= 1 ? "El primer numero primo es:\n\n" :"Los primeros %d numeros primos son:\n\n", k;
 	for(i = 2 ; cont < k ;i++){
         state = 0;
 		for(x = 2 ; x <= i ;x++){
