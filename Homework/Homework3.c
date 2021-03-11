@@ -5,53 +5,60 @@
 
 int main(){
 
-    int c, state = Last;    //declare c que es para los caracteres y state que me dira en que estado estan las llaves o comillas, etc.
-    int p = Last;       // la use para identificar si despues del punto seguia un numero, si era asi, no agregaria otra x ejemp: Correcto 123.12.12 ---> X / Mal 123.12.12 ---> XXX
+    int c, state = Last;
+    char a[6]={']','}',')','\"','\'','>'};
+    int i = 0;
+    int p = Last;
     int n = Last;
-    while ((c = getchar()) != EOF){     //ciclo para pedir caracteres
+    while ((c = getchar()) != EOF){
 
-        switch(c){                  // aqui imprimo todo lo que este entre un par de [] o {} o "" o <>
-        case '[':                   // primer caso, nos encontramos con [
-              state = First;        //declaramos el estado como first, haciendo mencion a que se inicio un corchete
-              do {putchar(c);} while((c = getchar()) != ']');        //ciclo para pedir caracteres y mostrarlos siempre y cuando no sea ]
-              state = Last;                         //declaro el estado como last, haciendo mencion a que se encontro el cierre ]
-            break;
-        case '{':                           //aca se hace lo mismo si el caracter leido es {
+        switch(c){
+        case '[':
               state = First;
-              do {putchar(c);} while((c = getchar()) != '}');            //se repite lo mismo, solo que evaluando } en vez de ]
-              state = Last;                     //declaro el estado como last
+              i = 0;
+            break;
+        case '{':
+              state = First;
+              i = 1;
             break;
         case '(':
               state = First;
-              do {putchar(c);} while((c = getchar()) != ')');        // lo mismo para los demas casos
-              state = Last;
+              i = 2;
             break;
         case '\"':
               state = First;
-              do {putchar(c);} while((c = getchar()) != '\"');
-              state = Last;
+              i = 3;
             break;
         case '\'':
               state = First;
-              do {putchar(c);} while((c = getchar()) != '\'');
-              state = Last;
+              i = 4;
             break;
         case '<':
               state = First;
-              do {putchar(c);} while((c = getchar()) != '>');
-              state = Last;
+              i = 5;
             break;
         }
-        if(state == Last ){     //se hace siempre y cuando el estado sea last
-           if(c >= '0' && c <= '9'){    // si c es un numero
-                p == First ? :printf("X");                //imprimimos x si p no es First
-            while((c = getchar()) >= '0' && c <= '9'){ //ciclo en el que pedimos un caracter y evaluamos si es un numero
+        if(state == First){
+           do {
+        if(c =='.' || c ==',' || c == ';' || c == ':' || c == '-' || c == '_' || c == '?' || c == '¿'){
+            while((c = getchar()) == '.' || c ==',' || c == ';' || c == ':' || c == '-' || c == '_' || c == '?' || c == '¿'){
+                ;
+            }
+           }
+           putchar(c);
+          } while((c = getchar()) != a[i]);
+            state = Last;
+        }
+        if(state == Last ){
+           if(c >= '0' && c <= '9'){
+                p == First ? :printf("X");
+            while((c = getchar()) >= '0' && c <= '9'){
                 ;
             }
             n = First;
         }
-        if(c =='.' || c ==',' || c == ';' || c == ':' || c == '-' || c == '_' || c == '?' || c == '�'){ //si es un signo de puntuacion
-            while((c = getchar()) == '.' || c ==',' || c == ';' || c == ':' || c == '-' || c == '_' || c == '?' || c == '�'){ //ciclo en el que pedimos un caracter y evaluamos si es puntuacion
+        if(c =='.' || c ==',' || c == ';' || c == ':' || c == '-' || c == '_' || c == '?' || c == '¿'){
+            while((c = getchar()) == '.' || c ==',' || c == ';' || c == ':' || c == '-' || c == '_' || c == '?' || c == '¿'){
                 ;
             }
             n == First ? p = First : "";
@@ -65,3 +72,4 @@ int main(){
 
    }
 }
+//Antes habian comentarios pero arregle algo y los borre por que me estorbaban mucho:((((
