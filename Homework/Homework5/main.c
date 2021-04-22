@@ -14,7 +14,7 @@ int final_minefield[25][25];
 
 int main()
 {
-    printf("\t\tWelcome to Minesweeper\n");
+    printf("\t\t\t\tWelcome to Minesweeper\n");
     game_mode();
     return 0;
 }
@@ -98,7 +98,7 @@ void custom(void)                                                   //Para dar l
 void minefield_generator(void)                            //Funcion para generar el campo
 {
     int i = 0, j = 0;
-    srand(time(NULL));                                  //Instrucción que inicializa el generador de números aleatorios
+    srand(time(NULL));                                  //InstrucciÃ³n que inicializa el generador de nÃºmeros aleatorios
 
     for(j = 0; j < N; j++){                                          //Loop para llenar el campo de # y copiarselo a los otros arrgelos
         for(i = 0; i < M; i++){
@@ -226,7 +226,7 @@ void answer(void)
         answer();
     }
 
-    else                                                // Verifica si los espacios adyacentes son blancos, y despues cambia los valores en el array blank_minefield. Como cambiaron, ahora se imprimirán en la función print minefield
+    else                                                // Verifica si los espacios adyacentes son blancos, y despues cambia los valores en el array blank_minefield. Como cambiaron, ahora se imprimirÃ¡n en la funciÃ³n print minefield
     {
         blank_minefield[x][y] = minefield[x][y];
         if( minefield[x][y] == 0 ){
