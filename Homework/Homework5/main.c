@@ -169,7 +169,7 @@ void print_minefield(void){                                  // Imprime el campo
         printf("%d\t", z);
         z++;
     }
-    printf("\n\n");
+    printf("\n");
 
     while( j < N ){                                          // Loop que imprime cada caracter en el campo
         printf("%d\t", j);
@@ -275,7 +275,7 @@ void print_final_minefield(void)                      // Imprime el campo de min
         printf("%d\t", z);
         z++;
     }
-    printf("\n\n");
+    printf("\n");
 
     while( j < N ){
         printf("%d\t", j);
