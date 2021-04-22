@@ -2,6 +2,7 @@
 #define FUNCIONES_H_INCLUDED
 
 #define FLUSH fflush(stdin)
+#include "funciones.c"
 
 void game_mode(void);
 void default_minefield(void);
