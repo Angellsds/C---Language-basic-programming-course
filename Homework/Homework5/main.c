@@ -290,7 +290,7 @@ void print_final_minefield(void)                      // Imprime el campo de min
 }
 
 void win(void){                                       // Cuando ganas, llama la funcion de jugar de nuevo
-    printf("\n\n\n\t\t\tYOU WIN!!!!!\n\n\n");
+    printf("\n\n\n\t\t\tWinner winner chicken dinner!!!!!\n\n\n");
     play_again();
 }
 
