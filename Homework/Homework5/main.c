@@ -54,7 +54,7 @@ void default_minefield(void)                                       //Da el campo
         srand(time(NULL));
         total_mines = rand () % (25-11) + 10;                   //Genera numero random de minas entre 10 y 25
         minefield_generator();
-        answer();
+        check();
         }
     if(y_n == 2){
         printf("\t\tNumber of mines you want to assign to the board: ");   //Asignar cantidad de minas
@@ -63,7 +63,7 @@ void default_minefield(void)                                       //Da el campo
             if( total_mines > (M * N))
                 error();
         minefield_generator();
-        answer();
+        check();
 }
     default_minefield();
 }
@@ -92,7 +92,7 @@ void custom(void)                                                   //Para dar l
         if( total_mines > (M * N))
         error();
     minefield_generator();
-    answer();
+    check();
 }
 
 void minefield_generator(void)                            //Funcion para generar el campo
@@ -193,7 +193,7 @@ void print_minefield(void){                                  // Imprime el campo
 }
 
 
-void answer(void)
+void check(void)
 {
     int q = 0, i=0, j=0, match=0;
     print_minefield();
@@ -215,7 +215,7 @@ void answer(void)
     system("cls");
     if( (x >= M) || (x < 0) || (y < 0) || (y >= N) ){
         printf("\nPlease enter a value inside the grid\n");
-        answer();
+        check();
     }
     if( minefield[x][y] == EOF ){                            // Empieza la funcion mine si el jugador selecciona una mina
         mine();
@@ -223,7 +223,7 @@ void answer(void)
     if( blank_minefield[x][y] != '#' )
     {
         printf("\nPlease enter a value that has not already been entered\n");
-        answer();
+        check();
     }
 
     else                                                // Verifica si los espacios adyacentes son blancos, y despues cambia los valores en el array blank_minefield. Como cambiaron, ahora se imprimirán en la función print minefield
@@ -255,7 +255,7 @@ void answer(void)
                 blank_minefield[x+1][y+1] = minefield[x+1][y+1];
             }
         }
-        answer();
+        check();
     }
 }
 
