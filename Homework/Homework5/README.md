@@ -1,1 +1,1 @@
-# Usar CodeBlocks por que online gbd no soporta varias opciones que integre.
+# Usar CodeBlocks por que online gbd no soporta varias opciones que integre para la consola.
