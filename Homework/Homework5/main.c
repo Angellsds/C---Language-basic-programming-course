@@ -214,7 +214,7 @@ void check(void)
     FLUSH;
     system("cls");
     if( (x >= M) || (x < 0) || (y < 0) || (y >= N) ){
-        printf("\nPlease enter a value inside the grid\n");
+        printf("\nPlease enter a value inside of the field\n");
         check();
     }
     if( minefield[x][y] == EOF ){                            // Empieza la funcion mine si el jugador selecciona una mina
