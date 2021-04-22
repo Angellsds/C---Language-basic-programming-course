@@ -83,9 +83,9 @@ void custom(void)                                                   //Para dar l
     total_mines = 0;
     system("cls");
     printf("\t\tPlease enter the size of the dimensions you want\n");
-    printf("\t\tFirst value: ");
+    printf("\t\tNumber of columns: ");
         scanf("%d", &M);
-    printf("\t\tSecond value: ");
+    printf("\t\tNumber of rows: ");
         scanf("%d", &N);
     printf("\t\tNumber of mines you want to assign to the board: ");
         scanf("%d", &total_mines);
