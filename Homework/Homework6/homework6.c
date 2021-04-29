@@ -3,7 +3,18 @@
 #include<stdlib.h>
 #include <string.h>
 #include <conio.h>
-#include "header.h"
+
+typedef struct TDAArbol
+{
+    struct TDAArbol *izq;
+    struct TDAArbol *der;
+    char *cadena;
+} *Arbol;
+
+Arbol arbol_insertar (Arbol nodo, const char *cadena);
+Arbol arbol_quitar (Arbol nodo, const char *cadena);
+void arbol_inorden (Arbol nodo);
+
 
 int main(void)
 {
@@ -39,7 +50,6 @@ int main(void)
         scanf("%s", cadena);
         (void) getchar();
         raiz = arbol_quitar (raiz, cadena);
-        printf("\nUsuario borrado correctamente\n");
         break;
         case '3': arbol_inorden (raiz); break;
       }
@@ -74,6 +84,7 @@ Arbol arbol_quitar (Arbol nodo, const char *cadena)
     if (nodo != NULL)
     {
         comparacion = strcmp (cadena, nodo->cadena);
+        printf(comparacion == 0 ? "\nUsuario borrado correctamente\n" : "\nUsuario Inexistente\n");
         if (comparacion==0)
         {
             if (nodo->izq == NULL)
