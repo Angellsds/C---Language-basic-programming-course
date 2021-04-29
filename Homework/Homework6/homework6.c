@@ -3,18 +3,7 @@
 #include<stdlib.h>
 #include <string.h>
 #include <conio.h>
-
-typedef struct TDAArbol
-{
-    struct TDAArbol *izq;
-    struct TDAArbol *der;
-    char *cadena;
-} *Arbol;
-
-Arbol arbol_insertar (Arbol nodo, const char *cadena);
-Arbol arbol_quitar (Arbol nodo, const char *cadena);
-void arbol_inorden (Arbol nodo);
-
+#include "header.h"
 
 int main(void)
 {
@@ -29,9 +18,9 @@ int main(void)
            "2.- Quitar cadena\n"
            "3.- Listado de usuarios\n"
            "4.- Salir\n\n"
-           "Seleccione una opci\242n: ");
+           "Seleccione una opcion: ");
        do {
-           opcion = getch ();
+           opcion = getchar ();
        } while (opcion<'1' || opcion>'4');
        printf ("%c\n\n", opcion);
        if (raiz == NULL && opcion != '1' && opcion != '4')
