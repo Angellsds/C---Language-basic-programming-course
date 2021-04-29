@@ -2,7 +2,6 @@
 #include<ctype.h>
 #include<stdlib.h>
 #include <string.h>
-#include <conio.h>
 
 typedef struct TDAArbol
 {
