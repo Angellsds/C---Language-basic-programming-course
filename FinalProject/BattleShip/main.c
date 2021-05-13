@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define ROW 11     //If you put more than 10, strange characters appear like rows and columns, but their value is still integer, 10, 11, 12, etc.
-#define COLUM 11   //and it still works properly
+#define ROW 10-     //If you put more than 10, strange characters appear like rows and columns, but their value is still integer, 10, 11, 12, etc.
+#define COLUM 10   //and it still works properly
 #define MAXSHIPS 15
 
 char myboard[ROW+1][COLUM+1];
