@@ -25,6 +25,7 @@ int attack(int, int);
 void win(int);
 int alreadyhited(int, int);
 int isdigit(int c);
+void wait();
 
 
 void setboard(){
@@ -170,10 +171,18 @@ int attack(int x, int y){
     }
 }
 
+void wait ()
+{
+    puts("Press enter to continue...");
+    setvbuf(stdin,NULL,_IONBF,0);
+    setvbuf(stdin,NULL,_IOFBF,BUFSIZ);
+    getchar();
+}
+
 void win(int x){
 
     printf(x == 1 ? "\t\tP2 WIN\n": "\t\tP1 WIN\n");
-    system("pause");
+    wait();
     exit(1);
 }
 
@@ -193,13 +202,6 @@ int alreadyhited(int i, int j){
         }
 }
 
-void wait ()
-{
-    puts("Press enter to continue...");
-    setvbuf(stdin,NULL,_IONBF,0);
-    setvbuf(stdin,NULL,_IOFBF,BUFSIZ);
-    getchar();
-}
 int main(void){
 
     int x =0,y =0, showmap =1;
