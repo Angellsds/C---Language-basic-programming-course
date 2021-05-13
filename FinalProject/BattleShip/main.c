@@ -22,6 +22,7 @@ void generateships();
 int attack(int, int);
 void win(int);
 int alreadyhited(int, int);
+int isdigit(int c);
 
 
 void setboard(){
@@ -48,22 +49,26 @@ void setboard(){
 }
 
 void showboard(int x){
-
+    
+    int fix = 0;
     if(*sort == 1){
-            printf(x == 1 ? "\tP1 Result\n\n" : "\tP1 turn\n\n");
+        printf(x == 1 ? "\tP1 Result\n\n" : "\tP1 turn\n\n");
     for(int i = 0; i<ROW; i++){
         for(int j = 0; j<COLUM; j++){
-            printf("%c  ", myview[i][j]);
-    }
+            if(fix == 0){printf(" "); fix ++;}
+            printf("%c ", myview[i][j]);
+         }
         printf("\n");
         }
         printf("\n");
     }
     else{
-            printf(x == 1 ? "\tP2 result\n\n" : "\tP2 turn\n\n");
+        printf(x == 1 ? "\tP2 result\n\n" : "\tP2 turn\n\n");
     for(int i = 0; i<ROW; i++){
-        for(int j = 0; j<COLUM; j++)
-            printf("%c  ", enemyview[i][j]);
+        for(int j = 0; j<COLUM; j++){
+            if(fix == 0){printf(" "); fix ++;}
+            printf("%c ", enemyview[i][j]);
+         }
         printf("\n");
         }
         printf("\n");
@@ -185,6 +190,14 @@ int alreadyhited(int i, int j){
             }
         }
 }
+
+void wait ()
+{
+    puts("Press enter to continue...");
+    setvbuf(stdin,NULL,_IONBF,0);
+    setvbuf(stdin,NULL,_IOFBF,BUFSIZ);
+    getchar();
+}
 int main(void){
 
     int x =0,y =0, showmap =1;
@@ -198,9 +211,8 @@ int main(void){
         printf("Choose a coordinate using this syntax x,y: ");
         scanf("%d%c%d",&x,&checksyntx,&y);
         fflush(stdin);
-            if((!isdigit(x) || !isdigit(y))&& x > 0 && y > 0 && x < ROW+1 && y < COLUM+1 && (checksyntx == ' ' || checksyntx == ',')){
+            if((!isdigit(x) || !isdigit(y)) && x > 0 && y > 0 && x < ROW+1 && y < COLUM+1 && (checksyntx == ' ' || checksyntx == ',')){
                 k = 1;
-                system("cls");
                 if(alreadyhited(y,x) == 1){continue;}
                 int hit = attack(y,x);
                 showboard(k);
@@ -208,8 +220,7 @@ int main(void){
                 if(*sort == 0){*sort = 1;} else{*sort = 0;}
                 printf(hit == 1? "You choose coordinates (%d,%d) and you hit a ship\n": "You choose coordinates (%d,%d) and you did not hit a ship\n",x,y);
                 showmap = 1;
-                system("pause");
-                system("cls");
+                wait();
             }
             else{
                 printf("\nWrong input\n\n");
@@ -218,3 +229,5 @@ int main(void){
         }
 
 }
+
+//some information about random http://programacionnerd.blogspot.com/2012/05/c-generando-numeros-aleatorios-random.html
