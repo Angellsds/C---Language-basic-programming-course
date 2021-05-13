@@ -248,4 +248,3 @@ int main(void){
 
 //some information about random http://programacionnerd.blogspot.com/2012/05/c-generando-numeros-aleatorios-random.html
 //int isdigit http://www.w3big.com/es/cprogramming/c-function-isdigit.html
-//Game instructions taken from here https://www.youtube.com/watch?v=NBbly3U9I14&ab_channel=ME2b_F2Coe13
