@@ -9,6 +9,10 @@ A new version will be created in this project and is part of our professional pr
  
 [Click here to check the code](https://github.com/Angellsds/Programming-course-C/tree/main/FinalProject/BattleShip)
 
+**Table of Contents**
+
+[TOCM]
+
 # What does it take to do it?
 - Function to set the field
 - Function to show the field
