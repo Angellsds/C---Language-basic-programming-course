@@ -188,11 +188,12 @@ int main(void){
     printf("    Welcome to BattleShip\n");
     printf("Instructions\n");
     printf("1. You have to defeat your opponent by destroying all his war ships before he destroys yours.\n");
-    printf("2. Its x y coordinates (both separated by a space or ,) where x is the row number and y is the column number\n");
-    printf("3. You have a fleet of N battle ships\n");
-    printf("4. After the ships are placed, you can attack the enemy area. To attack a specific area, enter its x y coordinate (separated by a space or ,)\n");
-    printf("5. If your attack hits the enemy ship, it will be denoted by an \'x\' and your turn ends.\n");
-    printf("6. If your attack misses, it will be denoted by a \'o\' and your turn ends\n");
+    printf("2. You have a fleet of N battle ships\n");
+    printf("3. The turn is chosen to see who will play first and it is shown above whose turn it is\n");
+    printf("4. After the ships are placed, you can attack the enemy area. To attack a specific area, enter its x y coordinate(separated by a space or ,)\n");
+    printf("5. If your attack hits the enemy ship, the new board will be shown and it will be denoted by an 'X' and your turn ends.\n");
+    printf("6. If your attack misses, the new board will be shown and it will be denoted by a 'o' and your turn ends.\n");
+    printf("7. And now the opponent's turn will follow ");
     printf("The first to shoot down the entire enemy fleet wins");
     generateships();
     wait();
