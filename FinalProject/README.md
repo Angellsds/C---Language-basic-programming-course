@@ -24,7 +24,6 @@ Battleship is a strategy type guessing game for two players. It is played on rul
 4. After the ships are placed, you can attack the enemy area. To attack a specific area, enter its x y coordinate(separated by a space or ,)
 5. If your attack hits the enemy ship, the new board will be shown and it will be denoted by an 'X' and your turn ends.
 6. If your attack misses, the new board will be shown and it will be denoted by a 'o' and your turn ends.
-7. If your attack misses, it will be denoted by a 'o' and your turn ends
-8. And now the opponent's turn will follow 
+7. And now the opponent's turn will follow 
 
 The first to shoot down the entire enemy fleet wins
