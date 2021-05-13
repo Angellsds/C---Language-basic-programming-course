@@ -21,3 +21,4 @@ int attack(int, int);
 void win(int);
 int alreadyhited(int, int);
 int isdigit(int c);
+void wait();
