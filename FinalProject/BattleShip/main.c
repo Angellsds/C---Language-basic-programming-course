@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define ROW 10
-#define COLUM 10
+#define ROW 11     //If you put more than 10, strange characters appear like rows and columns, but their value is still integer, 10, 11, 12, etc.
+#define COLUM 11   //and it still works properly
 #define MAXSHIPS 15
 
 char myboard[ROW+1][COLUM+1];
@@ -208,6 +208,13 @@ int main(void){
     char checksyntx;
     setboard();
     printf("    Welcome to BattleShip\n");
+    printf("Instructions\n");
+    printf("1. You have to defeat your opponent by destroying all his war ships before he destroys yours.\n");
+    printf("2. Its x y coordinates (both separated by a space or ,) where x is the row number and y is the column number\n");
+    printf("3. You have a fleet of N battle ships\n");
+    printf("4. After the ships are placed, you can attack the enemy area. To attack a specific area, enter its x y coordinate (separated by a space or ,)\n");
+    printf("5. If your attack hits the enemy ship, it will be denoted by an \'x\' and your turn ends.\n");
+    printf("6. If your attack misses, it will be denoted by a \'o\' and your turn ends\n");
     generateships();
     wait();
     while(1){
