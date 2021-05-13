@@ -193,7 +193,7 @@ int main(void){
     printf("4. After the ships are placed, you can attack the enemy area. To attack a specific area, enter its x y coordinate (separated by a space or ,)\n");
     printf("5. If your attack hits the enemy ship, it will be denoted by an \'x\' and your turn ends.\n");
     printf("6. If your attack misses, it will be denoted by a \'o\' and your turn ends\n");
-    printf("The first to defeat the enemy fleet wins");
+    printf("The first to shoot down the entire enemy fleet wins");
     generateships();
     wait();
     while(1){
