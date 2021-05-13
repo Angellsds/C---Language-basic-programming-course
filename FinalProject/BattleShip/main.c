@@ -215,6 +215,7 @@ int main(void){
     printf("4. After the ships are placed, you can attack the enemy area. To attack a specific area, enter its x y coordinate (separated by a space or ,)\n");
     printf("5. If your attack hits the enemy ship, it will be denoted by an \'x\' and your turn ends.\n");
     printf("6. If your attack misses, it will be denoted by a \'o\' and your turn ends\n");
+    printf("The first to shoot down the entire enemy fleet wins");
     generateships();
     wait();
     while(1){
@@ -246,3 +247,4 @@ int main(void){
 
 //some information about random http://programacionnerd.blogspot.com/2012/05/c-generando-numeros-aleatorios-random.html
 //int isdigit http://www.w3big.com/es/cprogramming/c-function-isdigit.html
+//Game instructions taken from here https://www.youtube.com/watch?v=NBbly3U9I14&ab_channel=ME2b_F2Coe13
