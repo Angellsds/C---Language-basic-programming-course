@@ -1,3 +1,5 @@
+//Remove // from system("cls") if you are using the command prompt
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -213,6 +215,7 @@ int main(void){
         fflush(stdin);
             if((!isdigit(x) || !isdigit(y)) && x > 0 && y > 0 && x < ROW+1 && y < COLUM+1 && (checksyntx == ' ' || checksyntx == ',')){
                 k = 1;
+                //system("cls");
                 if(alreadyhited(y,x) == 1){continue;}
                 int hit = attack(y,x);
                 showboard(k);
@@ -221,6 +224,7 @@ int main(void){
                 printf(hit == 1? "You choose coordinates (%d,%d) and you hit a ship\n": "You choose coordinates (%d,%d) and you did not hit a ship\n",x,y);
                 showmap = 1;
                 wait();
+                //system("cls");
             }
             else{
                 printf("\nWrong input\n\n");
@@ -231,3 +235,4 @@ int main(void){
 }
 
 //some information about random http://programacionnerd.blogspot.com/2012/05/c-generando-numeros-aleatorios-random.html
+//int isdigit http://www.w3big.com/es/cprogramming/c-function-isdigit.html
