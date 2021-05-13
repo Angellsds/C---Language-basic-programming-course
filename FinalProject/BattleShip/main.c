@@ -207,10 +207,11 @@ int main(void){
     setboard();
     printf("    Welcome to BattleShip\n");
     generateships();
+    wait();
     while(1){
         int k = 0;
         showmap == 1 ? showboard(k):NULL;
-        printf("Choose a coordinate using this syntax x,y: ");
+        puts("Choose a coordinate using this syntax x,y: ");
         scanf("%d%c%d",&x,&checksyntx,&y);
         fflush(stdin);
             if((!isdigit(x) || !isdigit(y)) && x > 0 && y > 0 && x < ROW+1 && y < COLUM+1 && (checksyntx == ' ' || checksyntx == ',')){
