@@ -36,4 +36,5 @@ CF 13 de 15
 ## References
 
 - [C-Refcard](https://users.ece.utexas.edu/~adnan/c-refcard.pdf)
+- [Programacion.Nerd (2012). "C: Generando números aleatorios"](http://programacionnerd.blogspot.com/2012/05/c-generando-numeros-aleatorios-random.html)
 
