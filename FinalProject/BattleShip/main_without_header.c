@@ -258,4 +258,4 @@ int main(void){ //main function
 }
 
 //some information about random http://programacionnerd.blogspot.com/2012/05/c-generando-numeros-aleatorios-random.html
-//int isdigit http://www.w3big.com/es/cprogramming/c-function-isdigit.html
+
