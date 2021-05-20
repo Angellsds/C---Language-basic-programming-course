@@ -31,7 +31,7 @@ The first to shoot down the entire enemy fleet wins
 4. Storage 1 (Stores the boards of each player in addition to their view)
 5. Documentation 3 (I do not think I have spelling errors and the video complies with what is requested)
 
-CF 13 de 15
+CF 12 de 15
 
 ## References
 
