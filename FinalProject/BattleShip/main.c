@@ -218,6 +218,7 @@ int main(void){ //main function
     generateships(); //generating ships
     wait(); //calling wait function
     system("cls"); //clearing the console
+    //system("clear");
     while(1){ //while to repeat infinitely
         int k = 0; //variable that checks if a coordinate has already been chosen
         showboard(k); //call the showboard function
@@ -228,17 +229,20 @@ int main(void){ //main function
                 k = 1; //setting k as 1
                 if(alreadyhited(y,x) == 1){system("cls");printf("   Location already chosen\n");continue;} //if that checks if the the coordinate was already chosen and repeat the loop
                 int hit = attack(y,x); //hit that position
-                if(hit == 1){system("cls");showboard(k);printf("You choose coordinates (%d,%d) and you hit a ship\n",x,y);wait();system("cls");continue;}//if to reset the turn in case we hit a ship
+                if(hit == 1){/*system("clear");*/system("cls");showboard(k);printf("You choose coordinates (%d,%d) and you hit a ship\n",x,y);wait();/*system("clear");*/system("cls");continue;}//if to reset the turn in case we hit a ship
                 system("cls"); //cleaning the terminal
+                //system("clear");
                 showboard(k); //showing the board
                 checkwin(); //checking if someone win
                 if(*sort == 0){*sort = 1;} else{*sort = 0;} //exchanging between turns
                 printf("You choose coordinates (%d,%d) and you did not hit a ship\n",x,y); //printf showing that we did not hit a ship
                 wait(); //calling wait function
                 system("cls"); //cleaning the terminal
+                //system("clear");
             }
             else{ //if we do not write valid coordinates
-                system("cls"); //cleaning the termial
+                system("cls"); //cleaning the terminal
+                //system("clear");
                 printf("   Invalid coordinate\n"); //printing invalid coordinates
             }
         }
