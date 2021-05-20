@@ -22,6 +22,6 @@ A new version will be created in the C language. This project is part of our "Pr
 The first to shoot down the entire enemy fleet wins
 
 ## Check how it works
-[Click here to check the video](https://www.youtube.com)
+[Click here to check the video](https://www.youtube.com/watch?v=LijxxCLQmLg&ab_channel=AngellDaviddSoriaGonzalez)
 
 
