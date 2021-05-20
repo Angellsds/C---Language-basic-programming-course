@@ -235,7 +235,7 @@ int main(void){ //main function
         fflush(stdin); //cleaning the input
             if((!isdigit(x) || !isdigit(y)) && x > 0 && y > 0 && x <= ROW && y <= COLUM && (checksyntx == ' ' || checksyntx == ',')){ //if that checks if the coordinate is a number and is a valid coordinate
                 k = 1; //setting k as 1
-                if(alreadyhited(y,x) == 1){system("cls");printf("   Location already chosen\n");continue;} //if that checks if the the coordinate was already chosen and repeat the loop
+                if(alreadyhited(y,x) == 1){/*system("clear");*/system("cls");printf("   Location already chosen\n");continue;} //if that checks if the the coordinate was already chosen and repeat the loop
                 int hit = attack(y,x); //hit that position
                 if(hit == 1){/*system("clear");*/system("cls");showboard(k);printf("You choose coordinates (%d,%d) and you hit a ship\n",x,y);wait();/*system("clear");*/system("cls");continue;}//if to reset the turn in case we hit a ship
                 system("cls"); //cleaning the terminal
