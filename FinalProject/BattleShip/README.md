@@ -2,5 +2,3 @@
 
 # Keep in mind
 If you are using a program that uses the windows command prompt, delete the comment slash of system("cls") and if you are using linux terminal delete slash from system("clear") to have a better experience.
-
-To avoid create a header file use only main.c if you want to compile with the header, use updatemain.c
