@@ -14,7 +14,7 @@ A new version will be created in the C language. This project is part of our "Pr
 1. You have to defeat your opponent by destroying all his war ships before he destroys yours.
 2. You have a fleet of N battle ships
 3. The turn is chosen to see who will play first and it is shown above whose turn it is
-4. After the ships are placed, you can attack the enemy area. To attack a specific area, enter its x y coordinate(separated by a space or ,)
+4. After the ships are placed, you can attack the enemy area. To attack a specific area, enter its x and y coordinate(separated by a space or ,)
 5. If your attack hits the enemy ship, the new board will be shown and it will be denoted by an 'X' and your turn continues.
 6. If your attack misses, the new board will be shown and it will be denoted by a 'o' and your turn ends.
 7. And now the opponent's turn will follow 
@@ -24,4 +24,11 @@ The first to shoot down the entire enemy fleet wins
 ## Check how it works
 [Click here to check the video](https://www.youtube.com/watch?v=LijxxCLQmLg&ab_channel=AngellDaviddSoriaGonzalez)
 
+## Self-evaluation
+1: Complexity 2 (It is not very complicated, but it is not easily done either)
+2: Functionality 3 (Works perfectly)
+3: Code 3 (I put it together in a very showy and very organized way, so that it is easily understood)
+4: Storage 3 (Stores the boards of each player in addition to their view)
+5: Documentation 3 (I do not think I have spelling errors and the video complies with what is requested)
+CF 14 de 15
 
