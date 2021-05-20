@@ -25,10 +25,11 @@ The first to shoot down the entire enemy fleet wins
 [Click here to check the video](https://www.youtube.com/watch?v=LijxxCLQmLg&ab_channel=AngellDaviddSoriaGonzalez)
 
 ## Self-evaluation
-1: Complexity 2 (It is not very complicated, but it is not easily done either)
-2: Functionality 3 (Works perfectly)
-3: Code 3 (I put it together in a very showy and very organized way, so that it is easily understood)
-4: Storage 3 (Stores the boards of each player in addition to their view)
-5: Documentation 3 (I do not think I have spelling errors and the video complies with what is requested)
-CF 14 de 15
+1. Complexity 2 (It is not very complicated, but it is not easily done either)
+2. Functionality 3 (Works perfectly)
+3. Code 3 (I put it together in a very showy and very organized way, so that it is easily understood)
+4. Storage 2 (Stores the boards of each player in addition to their view)
+5. Documentation 3 (I do not think I have spelling errors and the video complies with what is requested)
+
+CF 13 de 15
 
