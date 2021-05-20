@@ -1,5 +1,3 @@
-//Remove // from system("cls") if you are using the command prompt
-
 #include <stdio.h>  //Library to use printf
 #include <stdlib.h> //Use rand and srand
 #include <ctype.h>  //isdigit
