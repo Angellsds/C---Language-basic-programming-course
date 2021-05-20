@@ -28,7 +28,7 @@ The first to shoot down the entire enemy fleet wins
 1. Complexity 2 (It is not very complicated, but it is not easily done either)
 2. Functionality 3 (Works perfectly)
 3. Code 3 (I put it together in a very showy and very organized way, so that it is easily understood)
-4. Storage 2 (Stores the boards of each player in addition to their view and I use stdio for reasonable tasks in the right way cleaning the inputs)
+4. Storage 1 (Stores the boards of each player in addition to their view)
 5. Documentation 3 (I do not think I have spelling errors and the video complies with what is requested)
 
 CF 13 de 15
