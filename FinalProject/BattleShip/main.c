@@ -1,3 +1,13 @@
+//╔══╗──────╔╗──╔╗─╔╗─────────╔╗
+//║╔╗║─────╔╝╚╗╔╝╚╗║║─────────║║
+//║╚╝╚╗╔══╗╚╗╔╝╚╗╔╝║║─╔══╗╔══╗║╚═╗╔╗╔══╗
+//║╔═╗║║╔╗║─║║──║║─║║─║║═╣║══╣║╔╗║╠╣║╔╗║
+//║╚═╝║║╔╗║─║╚╗─║╚╗║╚╗║║═╣╠══║║║║║║║║╚╝║
+//╚═══╝╚╝╚╝─╚═╝─╚═╝╚═╝╚══╝╚══╝╚╝╚╝╚╝║╔═╝
+//──────────────────────────────────║║
+//──────────────────────────────────╚╝
+
+
 #include <stdio.h>  //Library to use printf
 #include <stdlib.h> //Use rand and srand
 #include <ctype.h>  //isdigit
@@ -203,7 +213,7 @@ int main(void){ //main function
     if(MAXSHIPS>ROW*COLUM){printf("Number of ships exceeds the board\n");exit(1);} //if that check that the number of ships does not exceed the size of the board
     setboard(); //calling the setboard function
     *sort = random_turn(); //choosing the turn randomly
-    printf("    Welcome to BattleShip\n"); //printing instructions
+    printf("    Welcome to BattleShip\n\n"); //printing instructions
     printf("Instructions\n");
     printf("1. You have to defeat your opponent by destroying all his war ships before he destroys yours.\n");
     printf("2. You have a fleet of N battle ships\n");
